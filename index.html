@@ -183,47 +183,51 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <!-- Results. -->
-    <div class="columns is-centered ">
+    <!-- Results -->
+    <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered" style="margin-top: -30px">Results</h2>
 
         <h3 class="title is-4">Novel View Synthesis</h3>
         <div class="content has-text-justified">
           <p>
-            We present the tradional 3D Gaussian Splatting, VBS (Ours), and Ground Truth.
+            We present the traditional 3D Gaussian Splatting (3DGS), VBS (Ours), and Ground Truth (GT).
           </p>
         </div>
+        
         <div class="container">
           <ul class="nav nav-tabs nav-fill nav-justified" id="object-scale-recon">
-              <li class="nav-item">
-                <a class="nav-link" onclick="objectSceneEvent(1,0,'object-scale-recon')">garden</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="objectSceneEvent(2,0,'object-scale-recon')">bonsai</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="objectSceneEvent(3,0,'object-scale-recon')">counter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="objectSceneEvent(4,0,'object-scale-recon')">bicycle</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" onclick="objectSceneEvent(5,0,'object-scale-recon')">flowers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="objectSceneEvent(6,0,'object-scale-recon')">treehill</a>
-              </li>
-
+            <li class="nav-item">
+              <button class="nav-link" onclick="objectSceneEvent(0,0,'object-scale-recon')">garden</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" onclick="objectSceneEvent(1,0,'object-scale-recon')">bonsai</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" onclick="objectSceneEvent(2,0,'object-scale-recon')">counter</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" onclick="objectSceneEvent(3,0,'object-scale-recon')">bicycle</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link active" onclick="objectSceneEvent(4,0,'object-scale-recon')">flowers</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" onclick="objectSceneEvent(5,0,'object-scale-recon')">treehill</button>
+            </li>
           </ul>
+          
           <div class="b-dics" style="width: 1600px; font-weight: 400;">
-            <img src="resources/image/flowers/3dgs.jpg" alt="3D-GS">
-            <img src="resources/image/flowers/ours.jpg" alt="Ours">
-            <img src="resources/image/flowers/gt.jpg" alt="GT">
+            <img src="resources/image/flowers/3dgs.jpg" alt="Traditional 3D Gaussian Splatting Example">
+            <img src="resources/image/flowers/ours.jpg" alt="Our Method Visualization (VBS)">
+            <img src="resources/image/flowers/gt.jpg" alt="Ground Truth Image">
           </div>
         </div>
-
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 <section class="section" id="BibTeX">
